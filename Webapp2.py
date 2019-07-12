@@ -9,8 +9,8 @@ def open_input_page():
 
 @app.route('/hello', methods=['post'])
 def display_the_result_page():
-    userName = request.form['username']
-    password = request.form['passWord']
+    userName = request.form['userName']
+    password = request.form['password']
 
     message = 'Your userName and Password are not valid'
     if(userName == password):
